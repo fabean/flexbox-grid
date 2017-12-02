@@ -35,7 +35,7 @@ $breakpoints: (
       flex-direction: column;
     }
 
-    .#{$beginning}flex-item {
+    .flex-item {
       flex: 1 1 100%;
 
       &.#{$beginning}flex-1-12,
