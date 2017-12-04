@@ -37,6 +37,8 @@ $breakpoints: (
 
     .flex-item {
       flex: 1 1 100%;
+      // padding fixes ie11 bug where it ignores box-sizing: border-box;
+      padding: 0 !important;
 
       &.#{$beginning}flex-1-12,
       .#{$beginning}flex-1-12 & {

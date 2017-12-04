@@ -23,7 +23,8 @@
   .flex-item {
     -webkit-box-flex: 1;
     -ms-flex: 1 1 100%;
-    flex: 1 1 100%; }
+    flex: 1 1 100%;
+    padding: 0 !important; }
     .flex-item.flex-1-12,
     .flex-1-12 .flex-item {
       -webkit-box-flex: 1;
@@ -241,7 +242,8 @@
   .flex-item {
     -webkit-box-flex: 1;
     -ms-flex: 1 1 100%;
-    flex: 1 1 100%; }
+    flex: 1 1 100%;
+    padding: 0 !important; }
     .flex-item.sm-flex-1-12,
     .sm-flex-1-12 .flex-item {
       -webkit-box-flex: 1;
@@ -459,7 +461,8 @@
   .flex-item {
     -webkit-box-flex: 1;
     -ms-flex: 1 1 100%;
-    flex: 1 1 100%; }
+    flex: 1 1 100%;
+    padding: 0 !important; }
     .flex-item.md-flex-1-12,
     .md-flex-1-12 .flex-item {
       -webkit-box-flex: 1;
@@ -677,7 +680,8 @@
   .flex-item {
     -webkit-box-flex: 1;
     -ms-flex: 1 1 100%;
-    flex: 1 1 100%; }
+    flex: 1 1 100%;
+    padding: 0 !important; }
     .flex-item.lg-flex-1-12,
     .lg-flex-1-12 .flex-item {
       -webkit-box-flex: 1;
@@ -895,7 +899,8 @@
   .flex-item {
     -webkit-box-flex: 1;
     -ms-flex: 1 1 100%;
-    flex: 1 1 100%; }
+    flex: 1 1 100%;
+    padding: 0 !important; }
     .flex-item.xl-flex-1-12,
     .xl-flex-1-12 .flex-item {
       -webkit-box-flex: 1;
@@ -1113,7 +1118,8 @@
   .flex-item {
     -webkit-box-flex: 1;
     -ms-flex: 1 1 100%;
-    flex: 1 1 100%; }
+    flex: 1 1 100%;
+    padding: 0 !important; }
     .flex-item.jumbo-flex-1-12,
     .jumbo-flex-1-12 .flex-item {
       -webkit-box-flex: 1;
