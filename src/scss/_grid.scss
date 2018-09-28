@@ -3,6 +3,18 @@
   max-width: $row-width;
 }
 
+.row-full {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.inner-row {
+  max-width: $inner-row-width;
+  margin: 0 auto;
+}
+
 // I cannot figure out how to get around defining what breakpoints exist for the grid here & in variables.scss
 $breakpoints: (
   default: $default,
@@ -16,8 +28,9 @@ $breakpoints: (
 @each $key, $breakpoint in $breakpoints {
   $beginning: '';
   @if $key != default {
-    $beginning: #{$key}-;
+    $beginning: #{$key}-; // sass-lint:disable-line space-around-operator
   }
+
   @media (min-width: $breakpoint) {
     .#{$beginning}flex-container {
       display: flex;
@@ -141,10 +154,11 @@ $breakpoints: (
       align-self: stretch;
     }
 
+    .flex-container > *,
     .flex-item {
       flex: 1 1 100%;
       // padding fixes ie11 bug where it ignores box-sizing: border-box;
-      padding: 0 !important;
+      padding: 0 !important; // sass-lint:disable-line no-important
 
       &.#{$beginning}flex-1-12,
       .#{$beginning}flex-1-12 & {
