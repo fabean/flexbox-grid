@@ -21,6 +21,17 @@
     .inner-row {
       padding: 0; } }
 
+.row-full {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%); }
+
+.inner-row {
+  max-width: 800px;
+  margin: 0 auto; }
+
 @media (min-width: 0) {
   .flex-container {
     display: -webkit-box;
