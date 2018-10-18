@@ -1,18 +1,28 @@
 .row {
   margin: 0 auto;
   max-width: $row-width;
+  padding: 0 $gutter-width;
+
+  @media (min-width: $row-width + $gutter-width) {
+    padding: 0;
+  }
 }
 
 .row-full {
-  width: 100vw;
-  position: relative;
   left: 50%;
+  position: relative;
   transform: translateX(-50%);
+  width: 100vw;
 }
 
 .inner-row {
-  max-width: $inner-row-width;
   margin: 0 auto;
+  max-width: $inner-row-width;
+  padding: 0 $gutter-width;
+
+  @media (min-width: $inner-row-width + $gutter-width) {
+    padding: 0;
+  }
 }
 
 // I cannot figure out how to get around defining what breakpoints exist for the grid here & in variables.scss
