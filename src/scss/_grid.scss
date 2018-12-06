@@ -167,8 +167,9 @@ $breakpoints: (
     .flex-container > *,
     .flex-item {
       flex: 1 1 100%;
-      // padding fixes ie11 bug where it ignores box-sizing: border-box;
-      padding: 0 !important; // sass-lint:disable-line no-important
+      // on ie11 there is a bug with flex item's padding and box-sizing: border-box, but forcing 0 padding
+      // caused other issues like forcing people to use !important tags just to add some padding to flex items.
+      padding: 0;
 
       &.#{$beginning}flex-1-12,
       .#{$beginning}flex-1-12 & {
