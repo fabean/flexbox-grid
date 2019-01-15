@@ -402,6 +402,10 @@ $breakpoints: (
         flex-shrink: 0;
       }
 
+      &.#{$beginning}flex-grow-0 {
+        flex-grow: 0;
+      }
+
       &.#{$beginning}flex-grow-2 {
         flex-grow: 2;
       }
