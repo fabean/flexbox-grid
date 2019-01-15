@@ -397,6 +397,26 @@ $breakpoints: (
       &.#{$beginning}flex-12-12 {
         flex: 1 1 100%;
       }
+
+      &.#{$beginning}flex-shrink-0 {
+        flex-shrink: 0;
+      }
+
+      &.#{$beginning}flex-grow-2 {
+        flex-grow: 2;
+      }
+
+      &.#{$beginning}flex-grow-3 {
+        flex-grow: 3;
+      }
+
+      &.#{$beginning}flex-grow-4 {
+        flex-grow: 4;
+      }
+
+      &.#{$beginning}flex-grow-5 {
+        flex-grow: 5;
+      }
     }
   }
 }
