@@ -438,6 +438,11 @@
     .flex-item.flex-shrink-0 {
       -ms-flex-negative: 0;
       flex-shrink: 0; }
+    .flex-container > *.flex-grow-0,
+    .flex-item.flex-grow-0 {
+      -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+      flex-grow: 0; }
     .flex-container > *.flex-grow-2,
     .flex-item.flex-grow-2 {
       -webkit-box-flex: 2;
@@ -876,6 +881,11 @@
     .flex-item.sm-flex-shrink-0 {
       -ms-flex-negative: 0;
       flex-shrink: 0; }
+    .flex-container > *.sm-flex-grow-0,
+    .flex-item.sm-flex-grow-0 {
+      -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+      flex-grow: 0; }
     .flex-container > *.sm-flex-grow-2,
     .flex-item.sm-flex-grow-2 {
       -webkit-box-flex: 2;
@@ -1314,6 +1324,11 @@
     .flex-item.md-flex-shrink-0 {
       -ms-flex-negative: 0;
       flex-shrink: 0; }
+    .flex-container > *.md-flex-grow-0,
+    .flex-item.md-flex-grow-0 {
+      -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+      flex-grow: 0; }
     .flex-container > *.md-flex-grow-2,
     .flex-item.md-flex-grow-2 {
       -webkit-box-flex: 2;
@@ -1752,6 +1767,11 @@
     .flex-item.lg-flex-shrink-0 {
       -ms-flex-negative: 0;
       flex-shrink: 0; }
+    .flex-container > *.lg-flex-grow-0,
+    .flex-item.lg-flex-grow-0 {
+      -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+      flex-grow: 0; }
     .flex-container > *.lg-flex-grow-2,
     .flex-item.lg-flex-grow-2 {
       -webkit-box-flex: 2;
@@ -2190,6 +2210,11 @@
     .flex-item.xl-flex-shrink-0 {
       -ms-flex-negative: 0;
       flex-shrink: 0; }
+    .flex-container > *.xl-flex-grow-0,
+    .flex-item.xl-flex-grow-0 {
+      -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+      flex-grow: 0; }
     .flex-container > *.xl-flex-grow-2,
     .flex-item.xl-flex-grow-2 {
       -webkit-box-flex: 2;
@@ -2628,6 +2653,11 @@
     .flex-item.jumbo-flex-shrink-0 {
       -ms-flex-negative: 0;
       flex-shrink: 0; }
+    .flex-container > *.jumbo-flex-grow-0,
+    .flex-item.jumbo-flex-grow-0 {
+      -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+      flex-grow: 0; }
     .flex-container > *.jumbo-flex-grow-2,
     .flex-item.jumbo-flex-grow-2 {
       -webkit-box-flex: 2;
