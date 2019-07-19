@@ -1,6 +1,6 @@
 # Koality Flexbox Grid
 
-This aims to be a very simple scss flexbox grid you can put into your project and give you a grid system that doesn't completely suck.
+This aims to be a very simple Sass flexbox grid that isn't overly complicated or ends up being something you fight against while building.
 
 ## How to use
 
