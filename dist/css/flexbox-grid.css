@@ -1,3 +1,10 @@
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  html * {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit; }
+
 .row {
   margin: 0 auto;
   max-width: 1400px;

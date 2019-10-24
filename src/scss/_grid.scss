@@ -25,16 +25,6 @@
   }
 }
 
-// I cannot figure out how to get around defining what breakpoints exist for the grid here & in variables.scss
-$breakpoints: (
-  default: $default,
-  sm: $sm,
-  md: $md,
-  lg: $lg,
-  xl: $xl,
-  jumbo: $jumbo
-);
-
 @each $key, $breakpoint in $breakpoints {
   $beginning: '';
   @if $key != default {
