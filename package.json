@@ -3,14 +3,30 @@
   "version": "0.0.11",
   "description": "Simple Flexbox Grid",
   "main": "index.js",
+  "watch": {
+    "sass": {
+      "patterns": [
+        "src"
+      ],
+      "extensions": "scss",
+      "quiet": false
+    },
+    "lint": {
+      "patterns": [
+        "src"
+      ],
+      "extensions": "scss",
+      "quiet": false
+    }
+  },
   "scripts": {
-    "build": "gulp",
-    "compile": "gulp compile",
-    "watch": "gulp watch",
-    "compress": "gulp compress",
-    "lint": "gulp lint",
-    "clean": "gulp clean",
-    "gulp": "gulp"
+    "build": "npm run lint; npm run sass; npm run compress",
+    "watch": "npm-watch",
+    "lint": "sass-lint './src/scss/*.scss' --verbose",
+    "sass": "node-sass ./src/scss/flexbox-grid.scss -x ./dist/css/flexbox-grid.css; npm run autoprefix",
+    "compress": "node-sass ./src/scss/flexbox-grid.scss -x ./dist/css/flexbox-grid.min.css --output-style compressed; npm run autoprefix-compressed",
+    "autoprefix": "postcss ./dist/css/flexbox-grid.css --use autoprefixer -o ./dist/css/flexbox-grid.css --no-map",
+    "autoprefix-compressed": "postcss ./dist/css/flexbox-grid.min.css --use autoprefixer -o ./dist/css/flexbox-grid.min.css --no-map"
   },
   "repository": {
     "type": "git",
@@ -23,19 +39,12 @@
   },
   "homepage": "https://github.com/fabean/flexbox-grid#readme",
   "dependencies": {
-    "babel-plugin-transform-remove-strict-mode": "0.0.2",
-    "babel-preset-env": "^1.6.0",
+    "autoprefixer": "^9.7.0",
     "breakpoint-sass": "^2.7.1",
-    "browser-sync": "^2.18.12",
-    "del": "^3.0.0",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.0.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-order": "^1.1.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0",
-    "gulp-sass-lint": "^1.3.2",
-    "gulp-sourcemaps": "^2.6.0",
-    "run-sequence": "^2.0.0"
+    "node-sass": "^4.13.0",
+    "npm-watch": "^0.6.0",
+    "postcss-cli": "^6.1.3",
+    "run-sequence": "^2.0.0",
+    "sass-lint": "^1.13.1"
   }
 }
