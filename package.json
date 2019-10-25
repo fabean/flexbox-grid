@@ -25,6 +25,7 @@
   "dependencies": {
     "babel-plugin-transform-remove-strict-mode": "0.0.2",
     "babel-preset-env": "^1.6.0",
+    "breakpoint-sass": "^2.7.1",
     "browser-sync": "^2.18.12",
     "del": "^3.0.0",
     "gulp": "^3.9.1",

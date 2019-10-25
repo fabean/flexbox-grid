@@ -3,7 +3,7 @@
   max-width: $row-width;
   padding: 0 $gutter-width;
 
-  @media (min-width: $row-width + $gutter-width) {
+  @include breakpoint($row-width + $gutter-width) {
     padding: 0;
   }
 }
@@ -20,7 +20,7 @@
   max-width: $inner-row-width;
   padding: 0 $gutter-width;
 
-  @media (min-width: $inner-row-width + $gutter-width) {
+  @include breakpoint($inner-row-width + $gutter-width) {
     padding: 0;
   }
 }
@@ -31,7 +31,7 @@
     $beginning: #{$key}-; // sass-lint:disable-line space-around-operator
   }
 
-  @media (min-width: $breakpoint) {
+  @include breakpoint($breakpoint) {
     .#{$beginning}flex-container {
       display: flex;
     }
