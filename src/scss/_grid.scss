@@ -164,7 +164,7 @@
       @for $numerator from 1 through $flex-grid-count {
         @for $denominator from 1 through $flex-grid-count {
           @if $numerator <= $denominator {
-            &.#{$beginning}flex-#{$numerator}-#{$denominator} > * {
+            &.#{$beginning}flex-#{$numerator}-#{$denominator} {
               flex-basis: percentage($numerator / $denominator);
             }
           }
@@ -193,6 +193,13 @@
 
       &.#{$beginning}flex-grow-5 {
         flex-grow: 5;
+      }
+    }
+
+    $numerator: 1;
+    @for $denominator from 1 through $flex-grid-count {
+      .flex-container.#{$beginning}flex-#{$numerator}-#{$denominator} > * {
+        flex-basis: percentage($numerator / $denominator);
       }
     }
   }

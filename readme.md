@@ -112,7 +112,7 @@ $breakpoints: (
 * `$gutter-width: 15px;`
 * `$flex-grid-count: 12;` This will adjust the amount of columns in the grid.
 * `$flex-grow-default: 0;` This will change wheither or not the grid items grow by default or not.
-* `$flex-shrink-default: 0;` This will change wheither or not the grid items shrink by default or not.
+* `$flex-shrink-default: 1;` This will change wheither or not the grid items shrink by default or not.
 
 ### Demo
 [See CodePen Example](https://codepen.io/fabean/pen/POerBX)
