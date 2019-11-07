@@ -198,7 +198,7 @@
 
     $numerator: 1;
     @for $denominator from 1 through $flex-grid-count {
-      .flex-container.#{$beginning}flex-#{$numerator}-#{$denominator} > * {
+      .flex-container.#{$beginning}flex-#{$numerator}-#{$denominator} > * { // sass-lint:disable-line force-element-nesting
         flex-basis: percentage($numerator / $denominator);
       }
     }
