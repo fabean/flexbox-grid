@@ -65,8 +65,18 @@ All classes listed can be prefixed with any breakpoint name to make it work on t
 * `$lg`: 1200px
 * `$xl`: 1440px
 * `$jumbo`: 1920px
+* `
+$breakpoints: (
+  default: $default,
+  sm: $sm,
+  md: $md,
+  lg: $lg,
+  xl: $xl,
+  jumbo: $jumbo
+);
+`
 
-These can be overridden in your own project as long as you match the variable names.
+These can be overridden in your own project as long as you match the variable names. If you drop breakpoints from the `$breakpoints` sass map it will change the amount of breakpoints the Grid has, this will greatly reduce the amount of CSS the Grid uses.
 
 Example:
 `md-flex-dir-colmn`, `lg-flex-2-3`
@@ -76,6 +86,33 @@ Example:
 * `row`: will center the row and make it `$row-width (default 1400px)` and on screens smaller than it's width it will have gutters the width of `$gutter-width (default 15px)`
 * `row-full` will be 100% width even able to break outside of a `row` and touch the edge of the screen
 * `inner-row` same as row but only `$inner-row-width (default 800px)`
+
+### Variables
+
+As much as we can we try to allow things to be user overridable. Here are currently all the variables you can change.
+
+* `$row-width: 1400px;`
+* `$inner-row-width: 800px;`
+* `$default: 0;`
+* `$sm: 600px;`
+* `$md: 900px;`
+* `$lg: 1200px;`
+* `$xl: 1440px;`
+* `$jumbo: 1920px;`
+* `
+$breakpoints: (
+  default: $default,
+  sm: $sm,
+  md: $md,
+  lg: $lg,
+  xl: $xl,
+  jumbo: $jumbo
+);
+`
+* `$gutter-width: 15px;`
+* `$flex-grid-count: 12;` This will adjust the amount of columns in the grid.
+* `$flex-grow-default: 0;` This will change wheither or not the grid items grow by default or not.
+* `$flex-shrink-default: 0;` This will change wheither or not the grid items shrink by default or not.
 
 ### Demo
 [See CodePen Example](https://codepen.io/fabean/pen/POerBX)
