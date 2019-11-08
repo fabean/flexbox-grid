@@ -46,7 +46,6 @@
   "homepage": "https://github.com/fabean/flexbox-grid#readme",
   "dependencies": {
     "autoprefixer": "^9.7.0",
-    "breakpoint-sass": "^2.7.1",
     "node-sass": "^4.13.0",
     "npm-watch": "^0.6.0",
     "postcss-cli": "^6.1.3",
