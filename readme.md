@@ -64,7 +64,6 @@ All classes listed can be prefixed with any breakpoint name to make it work on t
 * `$md`: 900px
 * `$lg`: 1200px
 * `$xl`: 1440px
-* `$jumbo`: 1920px
 * `
 $breakpoints: (
   default: $default,
@@ -72,7 +71,6 @@ $breakpoints: (
   md: $md,
   lg: $lg,
   xl: $xl,
-  jumbo: $jumbo
 );
 `
 
@@ -98,7 +96,6 @@ As much as we can we try to allow things to be user overridable. Here are curren
 * `$md: 900px;`
 * `$lg: 1200px;`
 * `$xl: 1440px;`
-* `$jumbo: 1920px;`
 * `
 $breakpoints: (
   default: $default,
@@ -106,7 +103,6 @@ $breakpoints: (
   md: $md,
   lg: $lg,
   xl: $xl,
-  jumbo: $jumbo
 );
 `
 * `$gutter-width: 15px;`
