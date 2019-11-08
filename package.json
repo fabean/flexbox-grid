@@ -28,6 +28,12 @@
     "autoprefix": "postcss ./dist/css/flexbox-grid.css --use autoprefixer -o ./dist/css/flexbox-grid.css --no-map",
     "autoprefix-compressed": "postcss ./dist/css/flexbox-grid.min.css --use autoprefixer -o ./dist/css/flexbox-grid.min.css --no-map"
   },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fabean/flexbox-grid.git"
