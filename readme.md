@@ -6,7 +6,7 @@ This aims to be a very simple Sass flexbox grid that isn't overly complicated or
 
 You can get this project into like any node package: `npm install koality-flexbox-grid`
 
-Then in your projects sass you will want to import it like `@import `node_modules/koality-flexbox-grid/src/scss/grid`. In doing that you can override some variables for breakpoints.
+Then in your projects sass you will want to import it like `@import `node_modules/koality-flexbox-grid/src/scss/flexbox-grid`. In doing that you can override some variables.
 
 ## Classes
 
