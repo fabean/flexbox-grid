@@ -60,10 +60,10 @@ All classes listed can be prefixed with any breakpoint name to make it work on t
 #### Available Breakpoints
 
 * `$default`: 0
-* `$sm`: 600px
-* `$md`: 900px
-* `$lg`: 1200px
-* `$xl`: 1440px
+* `$sm`: 576px
+* `$md`: 768px
+* `$lg`: 992px
+* `$xl`: 1200px
 * `
 $breakpoints: (
   default: $default,
@@ -92,10 +92,10 @@ As much as we can we try to allow things to be user overridable. Here are curren
 * `$row-width: 1400px;`
 * `$inner-row-width: 800px;`
 * `$default: 0;`
-* `$sm: 600px;`
-* `$md: 900px;`
-* `$lg: 1200px;`
-* `$xl: 1440px;`
+* `$sm: 576px;`
+* `$md: 768px;`
+* `$lg: 992px;`
+* `$xl: 1200px;`
 * `
 $breakpoints: (
   default: $default,
