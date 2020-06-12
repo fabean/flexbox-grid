@@ -1,0 +1,17 @@
+@each $key, $breakpoint in $breakpoints {
+  $beginning: '';
+  @if $key != default {
+    $beginning: #{$key}-; // sass-lint:disable-line space-around-operator
+  }
+
+  @media (min-width: $breakpoint) {
+    .#{$beginning}flex-column,
+    .#{$beginning}flex-dir-column {
+      flex-direction: column;
+
+      > * {
+        flex-basis: auto !important;
+      }
+    }
+  }
+}
