@@ -91,6 +91,11 @@ html {
     .#{$beginning}flex-column,
     .#{$beginning}flex-dir-column {
       flex-direction: column;
+
+      > * {
+        // fix for IE11 that doesn't hurt things anywhere else
+        flex-basis: auto !important;
+      }
     }
 
     .#{$beginning}flex-dir-column-reverse {
