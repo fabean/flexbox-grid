@@ -1,6 +1,6 @@
 {
   "name": "koality-flexbox-grid",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "description": "Simple Flexbox Grid",
   "main": "index.js",
   "watch": {
