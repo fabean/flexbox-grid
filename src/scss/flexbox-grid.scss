@@ -1,3 +1,5 @@
+@use "sass:math";
+
 $row-width: 1400px !default;
 $inner-row-width: 800px !default;
 
@@ -34,7 +36,7 @@ html {
   max-width: $row-width;
   padding: 0 $gutter-width;
 
-  @media (min-width: $row-width + $gutter-width) {
+  @media (min-width: ($row-width + $gutter-width)) {
     padding: 0;
   }
 }
@@ -51,7 +53,7 @@ html {
   max-width: $inner-row-width;
   padding: 0 $gutter-width;
 
-  @media (min-width: $inner-row-width + $gutter-width) {
+  @media (min-width: ($inner-row-width + $gutter-width)) {
     padding: 0;
   }
 }
@@ -196,7 +198,7 @@ html {
         @for $denominator from 1 through $flex-grid-count {
           @if $numerator <= $denominator {
             &.#{$beginning}flex-#{$numerator}-#{$denominator} {
-              flex-basis: math.div($numerator / $denominator);
+              flex-basis: math.div($numerator, $denominator);
             }
           }
         }
@@ -230,7 +232,7 @@ html {
     $numerator: 1;
     @for $denominator from 1 through $flex-grid-count {
       .flex-container.#{$beginning}flex-#{$numerator}-#{$denominator} > * { // sass-lint:disable-line force-element-nesting
-        flex-basis: math.div($numerator / $denominator);
+        flex-basis: math.div($numerator, $denominator);
       }
     }
   }
