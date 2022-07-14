@@ -1,6 +1,6 @@
 {
   "name": "koality-flexbox-grid",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple Flexbox Grid",
   "main": "index.js",
   "watch": {
@@ -23,17 +23,9 @@
     "build": "npm run lint; npm run sass; npm run compress",
     "watch": "npm-watch",
     "lint": "sass-lint './src/scss/*.scss' --verbose",
-    "sass": "sass --no-source-map ./src/scss/flexbox-grid.scss ./dist/css/flexbox-grid.css; npm run autoprefix",
-    "compress": "sass --no-source-map ./src/scss/flexbox-grid.scss ./dist/css/flexbox-grid.min.css --style compressed; npm run autoprefix-compressed",
-    "autoprefix": "postcss ./dist/css/flexbox-grid.css --use autoprefixer -o ./dist/css/flexbox-grid.css --no-map",
-    "autoprefix-compressed": "postcss ./dist/css/flexbox-grid.min.css --use autoprefixer -o ./dist/css/flexbox-grid.min.css --no-map"
+    "sass": "sass --no-source-map ./src/scss/flexbox-grid.scss ./dist/css/flexbox-grid.css",
+    "compress": "sass --no-source-map ./src/scss/flexbox-grid.scss ./dist/css/flexbox-grid.min.css --style compressed"
   },
-  "browserslist": [
-    "last 1 version",
-    "> 1%",
-    "maintained node versions",
-    "not dead"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fabean/flexbox-grid.git"
@@ -45,11 +37,9 @@
   },
   "homepage": "https://github.com/fabean/flexbox-grid#readme",
   "dependencies": {
-    "autoprefixer": "^10.4.0",
-    "eslint": "^8.2.0",
+    "eslint": "^8.19.0",
     "npm-watch": "^0.11.0",
-    "postcss-cli": "^9.0.2",
-    "sass": "^1.43.4",
+    "sass": "^1.53.0",
     "sass-lint": "^1.13.1"
   }
 }
