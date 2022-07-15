@@ -198,7 +198,7 @@ html {
         @for $denominator from 1 through $flex-grid-count {
           @if $numerator <= $denominator {
             &.#{$beginning}flex-#{$numerator}-#{$denominator} {
-              flex-basis: math.div($numerator, $denominator) *1%;
+              flex-basis: math.div($numerator, $denominator) *100%;
             }
           }
         }
@@ -232,7 +232,7 @@ html {
     $numerator: 1;
     @for $denominator from 1 through $flex-grid-count {
       .flex-container.#{$beginning}flex-#{$numerator}-#{$denominator} > * { // sass-lint:disable-line force-element-nesting
-        flex-basis: math.div($numerator, $denominator) *1%;
+        flex-basis: math.div($numerator, $denominator) *100%;
       }
     }
   }
