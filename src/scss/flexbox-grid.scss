@@ -201,6 +201,11 @@ html {
               flex-basis: math.div($numerator, $denominator) *100%;
             }
           }
+          @if $denominator == 12 {
+            &.#{$beginning}flex-#{$numerator} {
+              flex-basis: math.div($numerator, $denominator) *100%;
+            }
+          }
         }
       }
 
