@@ -36,7 +36,7 @@ html {
   max-width: $row-width;
   padding: 0 $gutter-width;
 
-  @media (min-width: ($row-width + $gutter-width)) {
+  @media (min-width: calc($row-width + $gutter-width)) {
     padding: 0;
   }
 }
@@ -53,7 +53,7 @@ html {
   max-width: $inner-row-width;
   padding: 0 $gutter-width;
 
-  @media (min-width: ($inner-row-width + $gutter-width)) {
+  @media (min-width: calc($inner-row-width + $gutter-width)) {
     padding: 0;
   }
 }
