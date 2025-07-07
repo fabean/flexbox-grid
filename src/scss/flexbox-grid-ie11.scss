@@ -1,3 +1,5 @@
+@use "sass:math";
+
 $row-width: 1400px !default;
 $inner-row-width: 800px !default;
 
@@ -34,7 +36,7 @@ html {
   max-width: $row-width;
   padding: 0 $gutter-width;
 
-  @media (min-width: $row-width + $gutter-width) {
+  @media (min-width: calc($row-width + $gutter-width)) {
     padding: 0;
   }
 }
@@ -51,7 +53,7 @@ html {
   max-width: $inner-row-width;
   padding: 0 $gutter-width;
 
-  @media (min-width: $inner-row-width + $gutter-width) {
+  @media (min-width: calc($inner-row-width + $gutter-width)) {
     padding: 0;
   }
 }
@@ -197,13 +199,18 @@ html {
 
       // Loop over grid count and each numberator on it and doing match for size.
       @for $numerator from 1 through $flex-grid-count {
-        @for $denominator from 1 through $flex-grid-count {
-          @if $numerator <= $denominator {
-            &.#{$beginning}flex-#{$numerator}-#{$denominator} {
-              flex-basis: percentage($numerator / $denominator);
+                  @for $denominator from 1 through $flex-grid-count {
+            @if $numerator <= $denominator {
+              &.#{$beginning}flex-#{$numerator}-#{$denominator} {
+                flex-basis: math.div($numerator, $denominator) * 100%;
+              }
+            }
+            @if $denominator == 12 {
+              &.#{$beginning}flex-#{$numerator} {
+                flex-basis: math.div($numerator, $denominator) * 100%;
+              }
             }
           }
-        }
       }
 
       &.#{$beginning}flex-shrink-0 {
@@ -234,7 +241,7 @@ html {
     $numerator: 1;
     @for $denominator from 1 through $flex-grid-count {
       .flex-container.#{$beginning}flex-#{$numerator}-#{$denominator} > * { // sass-lint:disable-line force-element-nesting
-        flex-basis: percentage($numerator / $denominator);
+        flex-basis: math.div($numerator, $denominator) * 100%;
       }
     }
   }

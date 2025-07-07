@@ -6,7 +6,23 @@ This aims to be a very simple Sass flexbox grid that isn't overly complicated or
 
 You can get this project into like any node package: `npm install koality-flexbox-grid`
 
-Then in your projects sass you will want to import it like `@import `node_modules/koality-flexbox-grid/src/scss/flexbox-grid`. In doing that you can override some variables.
+Then in your projects sass you will want to import it using the modern `@use` syntax:
+
+```scss
+@use "node_modules/koality-flexbox-grid/src/scss/flexbox-grid";
+```
+
+You can also configure variables by using the `with` clause:
+
+```scss
+@use "node_modules/koality-flexbox-grid/src/scss/flexbox-grid" with (
+  $row-width: 1200px,
+  $gutter-width: 20px,
+  $flex-grid-count: 16
+);
+```
+
+**Note**: The old `@import` syntax is deprecated as of Sass 1.80.0 and will be removed in Dart Sass 3.0.0. Please migrate to the `@use` syntax shown above.
 
 ## Classes
 
